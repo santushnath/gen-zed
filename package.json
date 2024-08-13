@@ -2,6 +2,7 @@
   "name": "gen-zed",
   "version": "1.0.0",
   "description": "``` ./tailwindcss init ```",
+  "private": false,
   "main": "tailwind.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

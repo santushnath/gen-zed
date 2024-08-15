@@ -18,7 +18,7 @@
 </head>
 <body>
 
-<main>
+<main class="overflow-clip">
 
     <section
             class="relative z-[1]"
@@ -32,42 +32,44 @@
             <div class="container flex justify-between items-center relative z-10 py-6">
                 <nav class="flex gap-4">
                     <a href="#"><img src="../assets/images/logo.png" alt=""></a>
-                    <ul class="flex gap-2">
+                    <ul class="hidden md:flex gap-2">
                         <li>
                             <a href="#"
-                               class="inline-flex items-center gap-1 font-medium font-display text-[13px] text-[#5C5C5C] hover:text-primary">Why
+                               class="inline-flex items-center gap-1 font-medium font-display text-[13px] text-[#5C5C5C] hover:text-primary text-nowrap">Why
                                 choose us
                                 <i class="ph ph-caret-down"></i></a>
                         </li>
                         <li>
                             <a href="#"
-                               class="inline-flex items-center gap-1 font-medium font-display text-[13px] text-[#5C5C5C] hover:text-primary">
+                               class="inline-flex items-center gap-1 font-medium font-display text-[13px] text-[#5C5C5C] hover:text-primary text-nowrap">
                                 What we do
                                 <i class="ph ph-caret-down"></i></a>
                         </li>
                         <li>
                             <a href="#"
-                               class="inline-flex items-center gap-1 font-medium font-display text-[13px] text-[#5C5C5C] hover:text-primary">
+                               class="inline-flex items-center gap-1 font-medium font-display text-[13px] text-[#5C5C5C] hover:text-primary text-nowrap">
                                 Who we help
                                 <i class="ph ph-caret-down"></i></a>
                         </li>
                         <li>
                             <a href="#"
-                               class="inline-flex items-center gap-1 font-medium font-display text-[13px] text-[#5C5C5C] hover:text-primary">
+                               class="hidden lg:inline-flex items-center gap-1 font-medium font-display text-[13px] text-[#5C5C5C] hover:text-primary text-nowrap">
                                 Free Startup Advice
                             </a>
                         </li>
                         <li>
                             <a href="#"
-                               class="inline-flex items-center gap-1 font-medium font-display text-[13px] text-[#5C5C5C] hover:text-primary">
+                               class="hidden lg:inline-flex items-center gap-1 font-medium font-display text-[13px] text-[#5C5C5C] hover:text-primary text-nowrap">
                                 Office Hear You
                             </a>
                         </li>
                     </ul>
                 </nav>
                 <div class="flex items-center gap-3">
-                    <a href="#" class="btn btn-outline !h-[36px] !px-3 text-white !border-white">Login</a>
-                    <a href="#" class="btn btn-white !h-[36px] !px-3 !text-primary"><i
+                    <a href="#"
+                       class="btn btn-outline !h-[36px] !px-3 lg:text-white text-primary !border-primary lg:!border-white">Login</a>
+                    <a href="#"
+                       class="hidden md:flex btn btn-primary lg:btn-white !h-[36px] !px-3 lg:!text-primary text-nowrap"><i
                             class="ph ph-phone !text-[18px]"></i>0203 290 6939</a>
                 </div>
             </div>
@@ -75,21 +77,21 @@
 
 
         <img
-                class="absolute right-0 top-0 text-gray-50 dark:text-slate-600 dark:text-opacity-30 z-[2]"
+                class="absolute right-0 top-0 text-gray-50 dark:text-slate-600 dark:text-opacity-30 hidden lg:block z-[2]"
                 src="../assets/images/header-shape-1.svg"
                 alt=""
         />
 
         <div class="container relative z-10 py-12">
-            <div class="grid grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div class="text-center lg:text-start">
-                    <div class="flex flex-col justify-center h-full max-w-[510px]">
+                    <div class="flex flex-col justify-center items-center lg:items-start mx-auto lg:mx-0 h-full max-w-[510px]">
                         <h1 class="mb-6">
                             <b class="text-primary font-extrabold">Empowering Growth</b> with Expert Bookkeeping and <b
                                 class="text-[#6B3089] font-extrabold">Strategic
                             Insights</b>
                         </h1>
-                        <p class="text-[20px] font-medium leading-[140%]">
+                        <p class="lg:text-[20px] font-medium leading-[140%]">
                             Streamline your finances with precision bookkeeping. Gain strategic insights for smarter
                             decisions.
                         </p>
@@ -104,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="">
+                <div class="mt-8 lg:mt-0">
                     <img
                             src="../assets/images/header-play.png"
                             alt=""
@@ -121,37 +123,38 @@
                 <p class="font-display uppercase text-[#6B3089]">Industries</p>
                 <h2 class="capitalize">Who we <span class="text-underline">help</span></h2>
             </div>
-            <div class="flex gap-2 mt-12 relative">
+            <div class="group/tabs flex gap-2 mt-12 relative">
                 <div class="flex-1 bg-[#EFEFF1] rounded-full overflow-x-auto">
                     <ul class="flex">
                         <li class="group/item active flex items-center gap-4 [&.active]/item:bg-primary text-[#676E7A] [&.active]/item:text-white px-6 h-[56px]">
                             <i class="ph ph-bank text-[24px]"></i>
-                            <span class="text-[18px] font-medium leading-[114%] font-display">Advertising Agencies</span>
+                            <span class="text-[18px] font-medium leading-[114%] font-display text-nowrap">Advertising Agencies</span>
                         </li>
                         <li class="group/item flex items-center gap-4 [&.active]/item:bg-primary text-[#676E7A] [&.active]/item:text-white px-6 h-[56px]">
                             <i class="ph ph-head-circuit text-[24px]"></i>
-                            <span class="text-[18px] font-medium leading-[114%] font-display">Software Companies</span>
+                            <span class="text-[18px] font-medium leading-[114%] font-display text-nowrap">Software Companies</span>
                         </li>
                         <li class="group/item flex items-center gap-4 [&.active]/item:bg-primary text-[#676E7A] [&.active]/item:text-white px-6 h-[56px]">
                             <i class="ph ph-head-circuit text-[24px]"></i>
-                            <span class="text-[18px] font-medium leading-[114%] font-display">Software Companies</span>
+                            <span class="text-[18px] font-medium leading-[114%] font-display text-nowrap">Software Companies</span>
                         </li>
                         <li class="group/item flex items-center gap-4 [&.active]/item:bg-primary text-[#676E7A] [&.active]/item:text-white px-6 h-[56px]">
                             <i class="ph ph-head-circuit text-[24px]"></i>
-                            <span class="text-[18px] font-medium leading-[114%] font-display">Software Companies</span>
+                            <span class="text-[18px] font-medium leading-[114%] font-display text-nowrap">Software Companies</span>
                         </li>
                     </ul>
                 </div>
-                <a href="#" class="btn btn-primary !rounded-full !px-2 !h-auto absolute right-0 -top-2 -bottom-2">
+                <a href="#"
+                   class="btn btn-primary !rounded-full !px-2 !h-auto absolute right-0 -top-2 -bottom-2 opacity-0 group-hover/tabs:opacity-100">
                     <i class="ph ph-caret-right"></i>
                 </a>
             </div>
-            <div class="grid grid-cols-3 items-end gap-12 mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 items-end gap-12 mt-12">
                 <div class="-mb-[12%]">
-                    <img src="../assets/images/who-we-help.png" alt="" class="w-full">
+                    <img src="../assets/images/who-we-help.png" alt="" class="w-auto md:w-full mx-auto">
                 </div>
                 <div class="col-span-2 flex flex-col border border-primary bg-white rounded-2xl overflow-clip">
-                    <div class="flex-1 p-12">
+                    <div class="flex-1 p-6 md:p-12">
                         <div class="inline-flex text-[48px] relative z-[1] text-brand before:content-[''] before:absolute before:-z-[1] before:top-2 before:left-2 before:w-full before:aspect-square before:rounded-full before:bg-brand-50">
                             <i class="ph ph-house-line"></i>
                         </div>
@@ -164,7 +167,7 @@
                             finishing before the 15th of the following month.
                         </p>
                     </div>
-                    <div class="flex items-center bg-primary h-[77px] px-12">
+                    <div class="flex items-center bg-primary h-[77px] p-6 md:px-12">
                         <a href="#" class="inline-flex items-center gap-2 text-lg text-white">
                             <span>View Details</span>
                             <i class="ph ph-arrow-up-right"></i>
@@ -177,9 +180,10 @@
 
     <section class="">
         <div class="container">
-            <div class="grid grid-cols-3 items-end gap-12 py-[80px]">
-                <div class="relative h-full">
-                    <img src="../assets/images/shape-1.png" alt="" class="absolute -top-[60px] -right-8 -z-[1] w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-3 items-end gap-12 pt-[80px] lg:py-[80px]">
+                <div class="relative z-[1] min-h-[200px] mb-[60px] lg:mb-0 h-full">
+                    <img src="../assets/images/shape-1.png" alt=""
+                         class="absolute -top-[60px] -right-8 -z-[1] h-full lg:h-auto lg:w-full">
                     <div class="relative h-full w-[150%] rounded-[19px_144px_19px_19px] bg-cover mr-6 float-right"
                          style="background-image: url(../assets/images/office-work.png)">
                     </div>
@@ -194,13 +198,13 @@
                         <img src="../assets/images/quote.png" alt="" class="absolute -z-[1] right-6 bottom-4">
                     </div>
                 </div>
-                <div class="col-span-2">
+                <div class="col-span-full lg:col-span-2">
                     <div class="max-w-[435px] w-full">
                         <p class="font-display uppercase text-[#6B3089]">About us</p>
                         <h2 class="mt-1">Al-powered finance department <span
                                 class="text-underline">on demand</span></h2>
                     </div>
-                    <div class="grid grid-cols-2 gap-8 mt-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
                         <p class="text-[16px]">
                             At Genzed, we understand that the financial backbone of any successful business is strong
                             Bookkeeping and Management Accounting. With a passion for numbers and a commitment to
@@ -254,40 +258,40 @@
                 <div class="flex-1 p-4 bg-[#EFEFF1] rounded-full overflow-x-auto">
                     <ul class="flex gap-4">
                         <li class="group/item active flex items-center gap-4 [&.active]/item:bg-primary rounded-full p-3">
-                            <span class="grid place-content-center text-[29px] w-[56px] aspect-square rounded-full border border-[#676E7A] text-[#676E7A] group-[.active]/item:border-white group-[.active]/item:bg-white">
+                            <span class="grid place-content-center text-[20px] lg:text-[29px] w-[40px] lg:w-[56px] aspect-square rounded-full border border-[#676E7A] text-[#676E7A] group-[.active]/item:border-white group-[.active]/item:bg-white">
                                 <i class="ph ph-head-circuit"></i>
                             </span>
-                            <span class="text-[20px] font-bold pr-6 text-[#676E7A] group-[.active]/item:text-white leading-[114%] font-display">Accounts <br>Payable</span>
+                            <span class="text-[16px] lg:text-[20px] font-bold pr-6 text-[#676E7A] group-[.active]/item:text-white leading-[114%] font-display">Accounts <br>Payable</span>
                         </li>
                         <li class="group/item flex items-center gap-4 [&.active]/item:bg-primary rounded-full p-3">
-                            <span class="grid place-content-center text-[29px] w-[56px] aspect-square rounded-full border border-[#676E7A] text-[#676E7A] group-[.active]/item:border-white group-[.active]/item:bg-white">
+                            <span class="grid place-content-center text-[20px] lg:text-[29px] w-[40px] lg:w-[56px] aspect-square rounded-full border border-[#676E7A] text-[#676E7A] group-[.active]/item:border-white group-[.active]/item:bg-white">
                                 <i class="ph ph-calendar-dots"></i>
                             </span>
-                            <span class="text-[20px] font-bold pr-6 text-[#676E7A] group-[.active]/item:text-white leading-[114%] font-display">Accounts <br>Receivable</span>
+                            <span class="text-[16px] lg:text-[20px] font-bold pr-6 text-[#676E7A] group-[.active]/item:text-white leading-[114%] font-display">Accounts <br>Receivable</span>
                         </li>
                         <li class="group/item flex items-center gap-4 [&.active]/item:bg-primary rounded-full p-3">
-                            <span class="grid place-content-center text-[29px] w-[56px] aspect-square rounded-full border border-[#676E7A] text-[#676E7A] group-[.active]/item:border-white group-[.active]/item:bg-white">
+                            <span class="grid place-content-center text-[20px] lg:text-[29px] w-[40px] lg:w-[56px] aspect-square rounded-full border border-[#676E7A] text-[#676E7A] group-[.active]/item:border-white group-[.active]/item:bg-white">
                                 <i class="ph ph-user"></i>
                             </span>
-                            <span class="text-[20px] font-bold pr-6 text-[#676E7A] group-[.active]/item:text-white leading-[114%] font-display">Ad-hoc <br>Analysis</span>
+                            <span class="text-[16px] lg:text-[20px] font-bold pr-6 text-[#676E7A] group-[.active]/item:text-white leading-[114%] font-display">Ad-hoc <br>Analysis</span>
                         </li>
                         <li class="group/item flex items-center gap-4 [&.active]/item:bg-primary rounded-full p-3">
-                            <span class="grid place-content-center text-[29px] w-[56px] aspect-square rounded-full border border-[#676E7A] text-[#676E7A] group-[.active]/item:border-white group-[.active]/item:bg-white">
+                            <span class="grid place-content-center text-[20px] lg:text-[29px] w-[40px] lg:w-[56px] aspect-square rounded-full border border-[#676E7A] text-[#676E7A] group-[.active]/item:border-white group-[.active]/item:bg-white">
                                 <i class="ph ph-calendar-dots"></i>
                             </span>
-                            <span class="text-[20px] font-bold pr-6 text-[#676E7A] group-[.active]/item:text-white leading-[114%] font-display">Cashflow <br>Management</span>
+                            <span class="text-[16px] lg:text-[20px] font-bold pr-6 text-[#676E7A] group-[.active]/item:text-white leading-[114%] font-display">Cashflow <br>Management</span>
                         </li>
                         <li class="group/item flex items-center gap-4 [&.active]/item:bg-primary rounded-full p-3">
-                            <span class="grid place-content-center text-[29px] w-[56px] aspect-square rounded-full border border-[#676E7A] text-[#676E7A] group-[.active]/item:border-white group-[.active]/item:bg-white">
+                            <span class="grid place-content-center text-[20px] lg:text-[29px] w-[40px] lg:w-[56px] aspect-square rounded-full border border-[#676E7A] text-[#676E7A] group-[.active]/item:border-white group-[.active]/item:bg-white">
                                 <i class="ph ph-user"></i>
                             </span>
-                            <span class="text-[20px] font-bold pr-6 text-[#676E7A] group-[.active]/item:text-white leading-[114%] font-display">Accounts <br>Payable</span>
+                            <span class="text-[16px] lg:text-[20px] font-bold pr-6 text-[#676E7A] group-[.active]/item:text-white leading-[114%] font-display">Accounts <br>Payable</span>
                         </li>
                         <li class="group/item flex items-center gap-4 [&.active]/item:bg-primary rounded-full p-3">
-                            <span class="grid place-content-center text-[29px] w-[56px] aspect-square rounded-full border border-[#676E7A] text-[#676E7A] group-[.active]/item:border-white group-[.active]/item:bg-white">
+                            <span class="grid place-content-center text-[20px] lg:text-[29px] w-[40px] lg:w-[56px] aspect-square rounded-full border border-[#676E7A] text-[#676E7A] group-[.active]/item:border-white group-[.active]/item:bg-white">
                                 <i class="ph ph-user"></i>
                             </span>
-                            <span class="text-[20px] font-bold pr-6 text-[#676E7A] group-[.active]/item:text-white leading-[114%] font-display">Accounts <br>Payable</span>
+                            <span class="text-[16px] lg:text-[20px] font-bold pr-6 text-[#676E7A] group-[.active]/item:text-white leading-[114%] font-display">Accounts <br>Payable</span>
                         </li>
                     </ul>
                 </div>
@@ -296,10 +300,10 @@
                 </a>
             </div>
             <div class="grid grid-cols-12 items-center gap-12">
-                <div class="col-span-5">
-                    <img src="../assets/images/ai-power.png" alt="" class="mx-auto">
+                <div class="col-span-12 md:col-span-5">
+                    <img src="../assets/images/ai-power.png" alt="" class="mx-auto ">
                 </div>
-                <div class="col-span-7">
+                <div class="col-span-12 md:col-span-7 text-center md:text-left">
                     <h3 class="text-primary">Artificial Intelligence</h3>
                     <p class="mt-4 !font-medium">At Genzed, we understand that the financial backbone of any successful
                         business is
@@ -337,14 +341,14 @@
             </div>
             <div class="mt-[80px]">
                 <div class="flex items-center gap-6">
-                    <div>
+                    <div class="hidden md:block">
                         <a href="#"
                            class="grid place-content-center w-12 aspect-square rounded-full bg-brand-50 hover:bg-brand-100/50 transition">
                             <i class="ph ph-caret-left"></i>
                         </a>
                     </div>
-                    <div class="flex-1 relative z-[1] border border-brand bg-white p-[64px] rounded-[48px] text-center">
-                        <div class="grid place-content-center bg-white w-[120px] aspect-square rounded-full border-2 border-brand-50 mx-auto -mt-[120px] mb-[50px]">
+                    <div class="flex-1 relative z-[1] border border-brand bg-white p-6 lg:p-[64px] rounded-[48px] text-center">
+                        <div class="grid place-content-center bg-white w-[120px] aspect-square rounded-full border-2 border-brand-50 mx-auto -mt-[84px] lg:-mt-[120px] mb-[30px] lg:mb-[50px]">
                             <img src="../assets/images/testimonial-logo.png" alt="">
                         </div>
                         <div class="max-w-[667px] mx-auto">
@@ -363,10 +367,11 @@
                         </div>
 
                         <img src="../assets/images/quote.png" alt=""
-                             class="absolute -z-[1] left-[64px] top-[64px] rotate-180">
-                        <img src="../assets/images/quote.png" alt="" class="absolute -z-[1] right-[64px] bottom-[64px]">
+                             class="absolute -z-[1] left-6 lg:left-[64px] top-6 lg:top-[64px] rotate-180">
+                        <img src="../assets/images/quote.png" alt=""
+                             class="absolute -z-[1] right-6 lg:right-[64px] bottom-6 lg:bottom-[64px]">
                     </div>
-                    <div>
+                    <div class="hidden md:block">
                         <a href="#"
                            class="grid place-content-center w-12 aspect-square rounded-full bg-brand-50 hover:bg-brand-100/50 transition">
                             <i class="ph ph-caret-right"></i>
@@ -391,7 +396,7 @@
                 <h2 class="capitalize">Join us in <br>
                     three easy steps</h2>
             </div>
-            <div class="grid grid-cols-3 gap-8 mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
                 <div>
                     <div class="inline-flex text-[48px] relative z-[1] text-brand before:content-[''] before:absolute before:-z-[1] before:-top-0 before:-left-[2px] before:w-[80%] before:aspect-square before:rounded-full before:bg-brand-50">
                         <i class="ph ph-envelope-simple"></i>
@@ -418,8 +423,8 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-12 bg-primary rounded-[48px] mt-24">
-                <div class="col-span-5 relative z-[1] py-12">
+            <div class="grid grid-cols-12 bg-primary rounded-[48px] mt-12 md:mt-24">
+                <div class="col-span-5 hidden lg:block relative z-[1] py-12">
                     <img src="../assets/images/shape-2.png" alt=""
                          class="absolute -z-[1] -top-8 right-0 h-[110%] !w-auto">
                     <div class="rounded-[48px] bg-cover bg-center h-full w-full shadow-lg -ml-12"
@@ -427,7 +432,7 @@
 
                     </div>
                 </div>
-                <div class="col-span-7 p-[80px]">
+                <div class="col-span-full lg:col-span-7 p-6 sm:p-12 lg:p-[80px]">
                     <div class="">
                         <p class="font-display uppercase text-white">Free Consultancy</p>
                         <h2 class="mt-1 text-white">
@@ -453,17 +458,17 @@
 
     <section class="py-[80px]">
         <div class="container">
-            <div class="flex justify-between">
+            <div class="lg:flex justify-between">
                 <div>
                     <p class="font-display uppercase text-[#6B3089]">Blog</p>
                     <h2 class="capitalize">Latest Information <br>
                         From <span class="text-underline">Our Blog</span></h2>
                 </div>
-                <div>
+                <div class="mt-8 lg:mt-0">
                     <a href="#" class="btn btn-outline !h-[48px] !px-8">All Blogs</a>
                 </div>
             </div>
-            <div class="grid grid-cols-3 gap-8 mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
                 <div class="rounded-2xl overflow-clip shadow-lg">
                     <img src="../assets/images/blog.png" alt="" class="w-full">
                     <div class="p-6">
@@ -537,7 +542,7 @@
     <section class="py-[80px] bg-[#F9FAFB]">
         <div class="container">
             <div class="grid grid-cols-12 gap-12">
-                <div class="col-span-4">
+                <div class="col-span-full md:col-span-4">
                     <img src="../assets/images/faq.png" alt=""/>
                     <div class="mt-8">
                         <h2 class="capitalize">
@@ -547,7 +552,7 @@
                             Solutions</p>
                     </div>
                 </div>
-                <div class="col-span-8">
+                <div class="col-span-full md:col-span-8">
                     <div class="border border-brand bg-white rounded-2xl p-6">
                         <div class="group/accordion active">
                             <a href="#" class="flex items-center gap-4">
@@ -626,11 +631,11 @@
                 <h2 class="capitalize">Office <span class="text-underline">Near You</span></h2>
             </div>
             <div class="grid grid-cols-12 gap-24">
-                <div class="col-span-5">
+                <div class="hidden lg:block col-span-5">
                     <img src="../assets/images/location.png" alt="" class="mt-8"/>
                 </div>
-                <div class="col-span-7 flex justify-end items-center relative">
-                    <img src="../assets/images/sky.png" alt="" class="absolute right-12 right-8 aspect-square">
+                <div class="col-span-7 flex justify-end items-center relative my-28 lg:my-0">
+                    <img src="../assets/images/sky.png" alt="" class="absolute right-12 aspect-square">
                     <div class="relative bg-[#F9FAFB] p-10 rounded-2xl max-w-[314px] w-full">
                         <p class="uppercase">Address</p>
                         <p class="font-medium text-[16px]">
@@ -664,7 +669,7 @@
     <section class="-mb-[113px] relative z-10">
         <div class="container">
             <div class="grid grid-cols-12 bg-primary rounded-[48px]">
-                <div class="col-span-5 relative z-[1] py-12">
+                <div class="hidden lg:block col-span-5 relative z-[1] py-12">
                     <img src="../assets/images/shape-2.png" alt=""
                          class="absolute -z-[1] -top-8 right-0 h-[110%] !w-auto">
                     <div class="rounded-[48px] bg-cover bg-center h-full w-full shadow-lg -ml-12"
@@ -672,7 +677,7 @@
 
                     </div>
                 </div>
-                <div class="col-span-7 p-[80px]">
+                <div class="col-span-full lg:col-span-7 p-6 sm:p-12 lg:p-[80px]">
                     <div class="">
                         <p class="font-display uppercase text-white">newsletter</p>
                         <h2 class="mt-1 text-white">
@@ -704,11 +709,11 @@
 
     <footer class="bg-[#171449] pt-[150px]">
         <div class="container">
-            <div class="grid grid-cols-3 py-12">
-                <div>
-                    <img src="../assets/images/logo.png" alt="">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-6 py-12">
+                <div class="text-center md:text-left">
+                    <img src="../assets/images/logo.png" alt="" class="mx-auto md:mx-0">
                     <p class="font-medium text-[16px] mt-3 text-white">&copy; Genzed 2024. All Rights Reserved</p>
-                    <ul class="flex gap-3 mt-6">
+                    <ul class="flex justify-center md:justify-start gap-3 mt-6">
                         <li>
                             <a href="#"><img src="../assets/images/social-linkedin.png" alt=""></a>
                         </li>
@@ -723,11 +728,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-span-2">
-                    <div class="grid grid-cols-3">
+                <div class="col-span-full md:col-span-2 text-center md:text-left">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div>
                             <h4 class="font-bold text-[20px] font-display text-white">Quick Links</h4>
-                            <ul class="mt-4 [&>li:not(:first-child)]:mt-2">
+                            <ul class="flex flex-row md:flex-col flex-wrap items-center md:items-start justify-center md:justify-start gap-x-6 gap-y-2 mt-4">
                                 <li>
                                     <a href="#" class="font-medium text-[16px] text-white hover:text-primary">About
                                         Genzed</a>
@@ -744,7 +749,7 @@
                         </div>
                         <div>
                             <h4 class="font-bold text-[20px] font-display text-white">Resources</h4>
-                            <ul class="mt-4 [&>li:not(:first-child)]:mt-2">
+                            <ul class="flex flex-row md:flex-col flex-wrap items-center md:items-start justify-center md:justify-start gap-x-6 gap-y-2 mt-4">
                                 <li>
                                     <a href="#" class="font-medium text-[16px] text-white hover:text-primary">FAQ</a>
                                 </li>
@@ -763,7 +768,7 @@
                         </div>
                         <div>
                             <h4 class="font-bold text-[20px] font-display text-white">Get Connected</h4>
-                            <ul class="mt-4 [&>li:not(:first-child)]:mt-2">
+                            <ul class="flex flex-row md:flex-col flex-wrap items-center md:items-start justify-center md:justify-start gap-x-6 gap-y-2 mt-4">
                                 <li>
                                     <a href="#"
                                        class="flex items-start gap-2 font-medium text-[16px] text-white hover:text-primary"><i

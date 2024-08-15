@@ -12,7 +12,7 @@
     }
 
     h1, .display-h1 {
-        @apply text-[51px] font-normal leading-[118%] -tracking-[1px];
+        @apply text-[36px] lg:text-[51px] font-normal leading-[118%] -tracking-[1px];
     }
 
     h2, .display-2 {

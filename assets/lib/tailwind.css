@@ -1559,6 +1559,10 @@ h3, .display-3 {
   font-size: 26px;
 }
 
+.\!text-\[20px\] {
+  font-size: 20px !important;
+}
+
 .\!font-medium {
   font-weight: 500 !important;
 }

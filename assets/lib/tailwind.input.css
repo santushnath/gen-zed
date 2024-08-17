@@ -4,7 +4,7 @@
 
 @layer base {
     body, p {
-        @apply font-normal text-[13px] lg:text-[18px] text-[#252931] leading-[165%]
+        @apply font-normal text-[15px] md:text-[13px] lg:text-[18px] text-[#252931] leading-[165%];
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -43,6 +43,14 @@
 
     .btn-outline {
         @apply h-[40px] lg:h-[54px] px-3 lg:px-6 rounded bg-transparent border border-[#6B3089] hover:bg-[#6B3089]/10;
+    }
+
+    .btn-lg {
+        @apply text-[20px] h-[64px] rounded-lg;
+    }
+
+    .btn-normal {
+        @apply text-[14px] lg:text-[18px] h-[40px] lg:h-[54px] rounded;
     }
 
     .text-underline {
